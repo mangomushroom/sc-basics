@@ -7,12 +7,12 @@
     </head>
     <body>
         <script>
-            if(window.location.protocol === 'file:') {
+            //if(window.location.protocol === 'file:') {
                 let baseLocation = window.location.href.substring(0, window.location.href.lastIndexOf('sc-basics/') + 'sc-basics/'.length)
                 document.head.innerHTML += '<link rel="stylesheet" href="' + baseLocation + 'css/site.css" type="text/css"/>';
-            } else {
-                document.head.innerHTML += '<link rel="stylesheet" href="/css/site.css" type="text/css"/>';
-            }
+            //} else {
+                //document.head.innerHTML += '<link rel="stylesheet" href="/css/site.css" type="text/css"/>';
+            //}
         </script>
         <header class="py-10">
 
