@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>https://mangomushroom.github.io/sc-basics/</loc>
+		<lastmod>2022-07-11T4:20:00+04:00</lastmod>
+	</url>
+    <url>
+		<loc>https://mangomushroom.github.io/sc-basics/contact.htlm</loc>
+		<lastmod>2022-07-11T4:20:00+04:00</lastmod>
+	</url>
+    <url>
+		<loc>https://mangomushroom.github.io/sc-basics/fundamentals/what-is-a-page.html</loc>
+		<lastmod>2022-07-12T4:20:00+04:00</lastmod>
+	</url>
+    <url>
+		<loc>https://mangomushroom.github.io/sc-basics/fundamentals/what-is-a-component.html</loc>
+		<lastmod>2022-07-13T4:20:00+04:00</lastmod>
+	</url>
+</urlset>
