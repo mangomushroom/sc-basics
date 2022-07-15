@@ -3,15 +3,24 @@
     <head>
         <title>Mango Mushroom's Sitecore Stuff</title>
 
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="Author" content="Mango Mushroom">
 
+        <meta property="og:title" content="The title" />
+        <meta property="og:type" content="The type" />
+        <meta property="og:url" content="http://url.com/" />
+        <meta property="og:image" content="http://image.jpg" />
+
         <meta name="description" content="Learn Sitecore fundamentals and build compelling experiences">
         <link rel="stylesheet" href="/sc-basics/css/site.css" type="text/css" />
+
+        <link rel="icon" type="image/png" href="/sc-basics/images/mango-mush--16.jpg" />
+        <!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="/path/favicon.ico" /><![endif]-->
     </head>
     <body>
-        <input class="md:hidden w-8 h-8" id="mobile-menu-checkbox" type="checkbox" >
+        <input class="md:hidden w-8 h-8" id="mobile-menu-checkbox" type="checkbox" placeholder="open or close mobile menu" >
         <header class="py-10">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <nav class="relative flex justify-between">
@@ -90,6 +99,7 @@
         </main>
         <footer>
 
+        <noscript>Your browser does not support JavaScript</noscript>
         </footer>
     </body>
     <script>
