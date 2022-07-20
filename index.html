@@ -3,143 +3,105 @@
     <head>
         <title>Mango Mushroom's Sitecore Stuff</title>
 
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval'">
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="Author" content="Mango Mushroom">
+        <meta name="Description" content="Be confident with Sitecore basics so you can spend time and money engaging your audience.">
+        <meta name="Keywords" content="sitecore asp.net c# marketing website technology software cloud hosting programming education enterprise">
 
         <meta property="og:title" content="The title" />
         <meta property="og:type" content="The type" />
         <meta property="og:url" content="http://url.com/" />
         <meta property="og:image" content="http://image.jpg" />
 
-        <meta name="description" content="Learn Sitecore fundamentals and build compelling experiences">
         <link rel="stylesheet" href="/sc-basics/css/site.css" type="text/css" />
 
         <link rel="icon" type="image/png" href="/sc-basics/images/mango-mush--16.jpg" />
         <!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="/path/favicon.ico" /><![endif]-->
+
     </head>
     <body>
         <input class="md:hidden w-8 h-8" id="mobile-menu-checkbox" type="checkbox" placeholder="open or close mobile menu" >
-        <header class="py-10">
-            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <nav class="relative flex justify-between">
-                    <div class="flex items-center md:gap-x-12">
-                        <a aria-label="Home" href="/sc-basics/">
-                            <img width="50px" height="50px" src="/sc-basics/images/mango-mush--100.jpg" alt="mango mushroom icon"/>
-                        </a>
-                        <div class="hidden md:flex md:gap-x-6">
-                            <a class="inline-block rounded-lg py-1 px-2 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="/#features">Features</a>
-                            <a class="inline-block rounded-lg py-1 px-2 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="/#testimonials">Testimonials</a>
-                            <a class="inline-block rounded-lg py-1 px-2 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="/#pricing">Pricing</a>
-                        </div>
-                    </div>
-                    <div class="flex items-center gap-x-5 md:gap-x-8">
-                        <div class="hidden md:block">
-                            <a class="inline-block rounded-lg py-1 px-2 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="/login">Sign in</a>
-                        </div>
-                        <a class="group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-blue-600 text-white hover:text-slate-100 hover:bg-blue-500 active:bg-blue-800 active:text-blue-100 focus-visible:outline-blue-600" href="/register">
-                            <span>Get started <span class="hidden lg:inline">today</span></span>
-                        </a>
-                        <div class="-mr-1 md:hidden menu">
-                            <div>
-                                <svg aria-hidden="true" class="h-3.5 w-3.5 overflow-visible stroke-slate-700" fill="none" stroke-width="2" stroke-linecap="round"><path d="M0 1H14M0 7H14M0 13H14" class="origin-center transition"></path><path d="M2 2L12 12M12 2L2 12" class="origin-center transition scale-90 opacity-0"></path></svg>
-                                <div class="popover">
-                                    <div class="fixed inset-0 bg-slate-300/50 opacity-100" id="headlessui-popover-overlay-:r3g:" aria-hidden="true"></div>
-                                    <div class="z-50 absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-white p-4 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5 opacity-100 scale-100" id="headlessui-popover-panel-:R1p6H1:" tabindex="-1">
-                                        <a class="block w-full p-2" href="/#features">Features</a>
-                                        <a class="block w-full p-2" href="/#testimonials">Testimonials</a>
-                                        <a class="block w-full p-2" href="/#pricing">Pricing</a>
-                                        <hr class="m-2 border-slate-300/40"><a class="block w-full p-2" href="/login">Sign in</a>
-                                    </div>
-                                </div>
+<header class="py-10">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <nav class="relative flex justify-between">
+            <div class="flex items-center md:gap-x-12">
+                <a aria-label="Home" href="/sc-basics/">
+                    <img width="50px" height="50px" src="/sc-basics/images/mango-mush--100.jpg" alt="mango mushroom icon"/>
+                </a>
+                <div class="hidden md:flex md:gap-x-6">
+                    <a class="inline-block rounded-lg py-1 px-2 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="/#features">Features</a>
+                    <a class="inline-block rounded-lg py-1 px-2 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="/#testimonials">Testimonials</a>
+                    <a class="inline-block rounded-lg py-1 px-2 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="/#pricing">Pricing</a>
+                </div>
+            </div>
+            <div class="flex items-center gap-x-5 md:gap-x-8">
+                <div class="hidden md:block">
+                    <a class="inline-block rounded-lg py-1 px-2 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="/login">Sign in</a>
+                </div>
+                <a class="group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-blue-600 text-white hover:text-slate-100 hover:bg-blue-500 active:bg-blue-800 active:text-blue-100 focus-visible:outline-blue-600" href="/register">
+                    <span>Get started <span class="hidden lg:inline">today</span></span>
+                </a>
+                <div class="-mr-1 md:hidden menu">
+                    <div>
+                        <svg aria-hidden="true" class="h-3.5 w-3.5 overflow-visible stroke-slate-700" fill="none" stroke-width="2" stroke-linecap="round"><path d="M0 1H14M0 7H14M0 13H14" class="origin-center transition"></path><path d="M2 2L12 12M12 2L2 12" class="origin-center transition scale-90 opacity-0"></path></svg>
+                        <div class="popover">
+                            <div class="fixed inset-0 bg-slate-300/50 opacity-100" id="headlessui-popover-overlay-:r3g:" aria-hidden="true"></div>
+                            <div class="z-50 absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-white p-4 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5 opacity-100 scale-100" id="headlessui-popover-panel-:R1p6H1:" tabindex="-1">
+                                <a class="block w-full p-2" href="/#features">Features</a>
+                                <a class="block w-full p-2" href="/#testimonials">Testimonials</a>
+                                <a class="block w-full p-2" href="/#pricing">Pricing</a>
+                                <hr class="m-2 border-slate-300/40"><a class="block w-full p-2" href="/login">Sign in</a>
                             </div>
                         </div>
                     </div>
-                </nav>
+                </div>
             </div>
-        </header>
+        </nav>
+    </div>
+</header>
         <main>
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-20 pb-16 text-center lg:pt-32">
-                <h1 class="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
-                    Don't Fight <span class="relative whitespace-nowrap text-rose-600">Sitecore</span>,  Engage Your Audience.
-                </h1>
-                <p class="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">Running Sitecore isn't the end or the beginning of the end, but the end of the beginning.  Having Sitecore fundamentals will allow you to take the next step with confidence.</p>
-                <div class="mt-10 flex justify-center gap-x-6">
-                    <a class="group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-slate-900 text-white hover:bg-slate-700 hover:text-slate-100 active:bg-slate-800 active:text-slate-300 focus-visible:outline-slate-900" href="/sc-basics/contact.html">
-                        Contact Mango Mushroom
-                    </a>
-                    <a
-                        class="group inline-flex ring-1 items-center justify-center rounded-full py-2 px-4 text-sm focus:outline-none ring-slate-200 text-slate-700 hover:text-slate-900 hover:ring-slate-300 active:bg-slate-100 active:text-slate-600 focus-visible:outline-blue-600 focus-visible:ring-slate-300"
-                        href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-                        <svg aria-hidden="true" class="h-3 w-3 flex-none fill-blue-600 group-active:fill-current"><path d="m9.997 6.91-7.583 3.447A1 1 0 0 1 1 9.447V2.553a1 1 0 0 1 1.414-.91L9.997 5.09c.782.355.782 1.465 0 1.82Z"></path></svg>
-                        <span class="ml-3">Watch video</span>
-                    </a>
-                </div>
-                <div class="mt-36 lg:mt-44">
-                    <p class="font-display text-base text-slate-900">Trusted by these six companies so far</p>
-                    <ul role="list" class="mt-8 flex items-center justify-center gap-x-8 sm:flex-col sm:gap-x-0 sm:gap-y-10 xl:flex-row xl:gap-x-12 xl:gap-y-0">
-                        <li>
-                            <ul role="list" class="flex flex-col items-center gap-y-8 sm:flex-row sm:gap-x-12 sm:gap-y-0">
-                                <li class="flex"><img alt="Transistor" src="/_next/static/media/transistor.7274e6c3.svg" width="158" height="48" decoding="async" data-nimg="future" loading="lazy" /></li>
-                                <li class="flex"><img alt="Tuple" src="/_next/static/media/tuple.74eb0ae0.svg" width="105" height="48" decoding="async" data-nimg="future" loading="lazy" /></li>
-                                <li class="flex"><img alt="StaticKit" src="/_next/static/media/statickit.d7937794.svg" width="127" height="48" decoding="async" data-nimg="future" loading="lazy" /></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <ul role="list" class="flex flex-col items-center gap-y-8 sm:flex-row sm:gap-x-12 sm:gap-y-0">
-                                <li class="flex"><img alt="Mirage" src="/_next/static/media/mirage.18d2ec4e.svg" width="138" height="48" decoding="async" data-nimg="future" loading="lazy" /></li>
-                                <li class="flex"><img alt="Laravel" src="/_next/static/media/laravel.7deed17e.svg" width="136" height="48" decoding="async" data-nimg="future" loading="lazy" /></li>
-                                <li class="flex"><img alt="Statamic" src="/_next/static/media/statamic.6da5ebfb.svg" width="147" height="48" decoding="async" data-nimg="future" loading="lazy" /></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <h1 class="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
+        Don't Fight <span class="relative whitespace-nowrap text-rose-600">Sitecore</span>,  Engage Your Audience.
+    </h1>
+    <p class="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">Running Sitecore isn't the end or the beginning of the end, but the end of the beginning.  Having Sitecore fundamentals will allow you to take the next step with confidence.</p>
+    <div class="mt-10 flex justify-center gap-x-6">
+        <a class="group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-slate-900 text-white hover:bg-slate-700 hover:text-slate-100 active:bg-slate-800 active:text-slate-300 focus-visible:outline-slate-900" href="/sc-basics/contact.html">
+            Contact Mango Mushroom
+        </a>
+        <a
+            class="group inline-flex ring-1 items-center justify-center rounded-full py-2 px-4 text-sm focus:outline-none ring-slate-200 text-slate-700 hover:text-slate-900 hover:ring-slate-300 active:bg-slate-100 active:text-slate-600 focus-visible:outline-blue-600 focus-visible:ring-slate-300"
+            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+            <svg aria-hidden="true" class="h-3 w-3 flex-none fill-blue-600 group-active:fill-current"><path d="m9.997 6.91-7.583 3.447A1 1 0 0 1 1 9.447V2.553a1 1 0 0 1 1.414-.91L9.997 5.09c.782.355.782 1.465 0 1.82Z"></path></svg>
+            <span class="ml-3">Watch video</span>
+        </a>
+    </div>
+    <div class="mt-36 lg:mt-44">
+        <p class="font-display text-base text-slate-900">Trusted by these six companies so far</p>
+        <ul role="list" class="mt-8 flex items-center justify-center gap-x-8 sm:flex-col sm:gap-x-0 sm:gap-y-10 xl:flex-row xl:gap-x-12 xl:gap-y-0">
+            <li>
+                <ul role="list" class="flex flex-col items-center gap-y-8 sm:flex-row sm:gap-x-12 sm:gap-y-0">
+                    <li class="flex"><img alt="Transistor" src="/_next/static/media/transistor.7274e6c3.svg" width="158" height="48" decoding="async" data-nimg="future" loading="lazy" /></li>
+                    <li class="flex"><img alt="Tuple" src="/_next/static/media/tuple.74eb0ae0.svg" width="105" height="48" decoding="async" data-nimg="future" loading="lazy" /></li>
+                    <li class="flex"><img alt="StaticKit" src="/_next/static/media/statickit.d7937794.svg" width="127" height="48" decoding="async" data-nimg="future" loading="lazy" /></li>
+                </ul>
+            </li>
+            <li>
+                <ul role="list" class="flex flex-col items-center gap-y-8 sm:flex-row sm:gap-x-12 sm:gap-y-0">
+                    <li class="flex"><img alt="Mirage" src="/_next/static/media/mirage.18d2ec4e.svg" width="138" height="48" decoding="async" data-nimg="future" loading="lazy" /></li>
+                    <li class="flex"><img alt="Laravel" src="/_next/static/media/laravel.7deed17e.svg" width="136" height="48" decoding="async" data-nimg="future" loading="lazy" /></li>
+                    <li class="flex"><img alt="Statamic" src="/_next/static/media/statamic.6da5ebfb.svg" width="147" height="48" decoding="async" data-nimg="future" loading="lazy" /></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
         </main>
         <footer>
 
         <noscript>Your browser does not support JavaScript</noscript>
         </footer>
     </body>
-    <script>
-        if(window.location.protocol == 'file:') {
-            let baseLocation = window.location.href.substring(0, window.location.href.lastIndexOf('sc-basics/'))
-            let links = window.document.getElementsByTagName('link');
-            for(let i = 0; i < links.length; i++) {
-                let link = links[i];
-                let linkHref = link.getAttribute('href');
-                
-                if(linkHref.startsWith('/sc-basics')) {
-                    let fileHref = baseLocation + linkHref;
-
-                    link.setAttribute('href', fileHref);
-                }
-            }
-
-            let anchors = window.document.getElementsByTagName('a');
-            for(let i = 0; i < anchors.length; i++) {
-                let anchor = anchors[i];
-                let anchorHref = anchor.getAttribute('href');
-                
-                if(anchorHref.startsWith('/sc-basics')) {
-                    let fileHref = baseLocation + anchorHref;
-
-                    anchor.setAttribute('href', fileHref);
-                }
-            }
-
-            let images = window.document.getElementsByTagName('img');
-            for(let i = 0; i < images.length; i++) {
-                let image = images[i];
-                let imageSrc = image.getAttribute('src');
-
-                if(imageSrc.startsWith('/sc-basics')) {
-                    let fileSrc = baseLocation + imageSrc;
-
-                    image.setAttribute('src', fileSrc);
-                }
-            }
-        }
-    </script>
 </html>

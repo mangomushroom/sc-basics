@@ -2,131 +2,101 @@
 <html lang="en">
     <head>
         <title>Mango Mushroom's Sitecore Stuff</title>
+
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval'">
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="Author" content="Mango Mushroom">
+
+        <meta property="og:title" content="The title" />
+        <meta property="og:type" content="The type" />
+        <meta property="og:url" content="http://url.com/" />
+        <meta property="og:image" content="http://image.jpg" />
+
+        <meta name="description" content="Learn Sitecore fundamentals and build compelling experiences">
         <link rel="stylesheet" href="/sc-basics/css/site.css" type="text/css" />
+
+        <link rel="icon" type="image/png" href="/sc-basics/images/mango-mush--16.jpg" />
+        <!--[if IE]><link rel="shortcut icon" type="image/x-icon" href="/path/favicon.ico" /><![endif]-->
     </head>
     <body>
-        <input class="md:hidden w-8 h-8" id="mobile-menu-checkbox" type="checkbox" >
-        <header class="py-10">
-            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <nav class="relative flex justify-between">
-                    <div class="flex items-center md:gap-x-12">
-                        <a aria-label="Home" href="/sc-basics/">
-                            <img width="50px" height="50px" src="/sc-basics/images/mango-mush--100.jpg" alt="mango mushroom icon"/>
-                        </a>
-                        <div class="hidden md:flex md:gap-x-6">
-                            <a class="inline-block rounded-lg py-1 px-2 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="/#features">Features</a>
-                            <a class="inline-block rounded-lg py-1 px-2 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="/#testimonials">Testimonials</a>
-                            <a class="inline-block rounded-lg py-1 px-2 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="/#pricing">Pricing</a>
-                        </div>
-                    </div>
-                    <div class="flex items-center gap-x-5 md:gap-x-8">
-                        <div class="hidden md:block">
-                            <a class="inline-block rounded-lg py-1 px-2 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="/login">Sign in</a>
-                        </div>
-                        <a class="group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-blue-600 text-white hover:text-slate-100 hover:bg-blue-500 active:bg-blue-800 active:text-blue-100 focus-visible:outline-blue-600" href="/register">
-                            <span>Get started <span class="hidden lg:inline">today</span></span>
-                        </a>
-                        <div class="-mr-1 md:hidden menu">
-                            <div>
-                                <svg aria-hidden="true" class="h-3.5 w-3.5 overflow-visible stroke-slate-700" fill="none" stroke-width="2" stroke-linecap="round"><path d="M0 1H14M0 7H14M0 13H14" class="origin-center transition"></path><path d="M2 2L12 12M12 2L2 12" class="origin-center transition scale-90 opacity-0"></path></svg>
-                                <div class="popover">
-                                    <div class="fixed inset-0 bg-slate-300/50 opacity-100" id="headlessui-popover-overlay-:r3g:" aria-hidden="true"></div>
-                                    <div class="z-50 absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-white p-4 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5 opacity-100 scale-100" id="headlessui-popover-panel-:R1p6H1:" tabindex="-1">
-                                        <a class="block w-full p-2" href="/#features">Features</a>
-                                        <a class="block w-full p-2" href="/#testimonials">Testimonials</a>
-                                        <a class="block w-full p-2" href="/#pricing">Pricing</a>
-                                        <hr class="m-2 border-slate-300/40"><a class="block w-full p-2" href="/login">Sign in</a>
-                                    </div>
-                                </div>
+        <input class="md:hidden w-8 h-8" id="mobile-menu-checkbox" type="checkbox" placeholder="open or close mobile menu" >
+<header class="py-10">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <nav class="relative flex justify-between">
+            <div class="flex items-center md:gap-x-12">
+                <a aria-label="Home" href="/sc-basics/">
+                    <img width="50px" height="50px" src="/sc-basics/images/mango-mush--100.jpg" alt="mango mushroom icon"/>
+                </a>
+                <div class="hidden md:flex md:gap-x-6">
+                    <a class="inline-block rounded-lg py-1 px-2 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="/#features">Features</a>
+                    <a class="inline-block rounded-lg py-1 px-2 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="/#testimonials">Testimonials</a>
+                    <a class="inline-block rounded-lg py-1 px-2 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="/#pricing">Pricing</a>
+                </div>
+            </div>
+            <div class="flex items-center gap-x-5 md:gap-x-8">
+                <div class="hidden md:block">
+                    <a class="inline-block rounded-lg py-1 px-2 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="/login">Sign in</a>
+                </div>
+                <a class="group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-blue-600 text-white hover:text-slate-100 hover:bg-blue-500 active:bg-blue-800 active:text-blue-100 focus-visible:outline-blue-600" href="/register">
+                    <span>Get started <span class="hidden lg:inline">today</span></span>
+                </a>
+                <div class="-mr-1 md:hidden menu">
+                    <div>
+                        <svg aria-hidden="true" class="h-3.5 w-3.5 overflow-visible stroke-slate-700" fill="none" stroke-width="2" stroke-linecap="round"><path d="M0 1H14M0 7H14M0 13H14" class="origin-center transition"></path><path d="M2 2L12 12M12 2L2 12" class="origin-center transition scale-90 opacity-0"></path></svg>
+                        <div class="popover">
+                            <div class="fixed inset-0 bg-slate-300/50 opacity-100" id="headlessui-popover-overlay-:r3g:" aria-hidden="true"></div>
+                            <div class="z-50 absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-white p-4 text-lg tracking-tight text-slate-900 shadow-xl ring-1 ring-slate-900/5 opacity-100 scale-100" id="headlessui-popover-panel-:R1p6H1:" tabindex="-1">
+                                <a class="block w-full p-2" href="/#features">Features</a>
+                                <a class="block w-full p-2" href="/#testimonials">Testimonials</a>
+                                <a class="block w-full p-2" href="/#pricing">Pricing</a>
+                                <hr class="m-2 border-slate-300/40"><a class="block w-full p-2" href="/login">Sign in</a>
                             </div>
                         </div>
                     </div>
-                </nav>
-            </div>
-        </header>
-        <main>
-            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-20 pb-16 text-center lg:pt-32">
-                <h1 class="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
-                    Lets talk about <span class="relative whitespace-nowrap text-rose-600">Sitecore</span>.
-                </h1>
-                <div class="mx-auto md:w-[45rem]">
-                    <form
-                        id="contact-form"
-                        action="https://docs.google.com/forms/d/e/1FAIpQLSdHL26MueX-ar5NSwmIgV7i5W03BYNntAlxzewR28bxAlv8uA/formResponse?embedded=true"
-                        target="response"
-                        method="POST"
-                        class="text-left">
-                        <label class="mt-8 block text-sm font-medium text-gray-700">Name<input class="block w-full appearance-none rounded-md border border-gray-200 bg-gray-50 px-3 py-2 text-gray-900 placeholder-gray-400 focus:border-blue-500 focus:bg-white focus:outline-none focus:ring-blue-500 sm:text-sm" type="text" name="entry.1888164337" value="" /></label>
-                        <label class="mt-4 block text-sm font-medium text-gray-700">Phone Number<input class="block w-full appearance-none rounded-md border border-gray-200 bg-gray-50 px-3 py-2 text-gray-900 placeholder-gray-400 focus:border-blue-500 focus:bg-white focus:outline-none focus:ring-blue-500 sm:text-sm" type="text" name="entry.2133990514" value="" /></label>
-                        <label class="mt-4 block text-sm font-medium text-gray-700">Email Address<input class="block w-full appearance-none rounded-md border border-gray-200 bg-gray-50 px-3 py-2 text-gray-900 placeholder-gray-400 focus:border-blue-500 focus:bg-white focus:outline-none focus:ring-blue-500 sm:text-sm" type="text" name="entry.1310679699" value="" /></label>
-                        <label class="mt-4 block text-sm font-medium text-gray-700">Message<textarea class="block w-full appearance-none rounded-md border border-gray-200 bg-gray-50 px-3 py-2 text-gray-900 placeholder-gray-400 focus:border-blue-500 focus:bg-white focus:outline-none focus:ring-blue-500 sm:text-sm" type="text" name="entry.1696175730" value="" ></textarea></label>
-                        <input class="mt-8 group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-blue-600 text-white hover:text-slate-100 hover:bg-blue-500 active:bg-blue-800 active:text-blue-100 focus-visible:outline-blue-600 w-full" type="submit" value="Submit" />
-                    </form>
-                    <script>
-                        let form = document.getElementById('contact-form');
-
-                        addEventListener('submit', (event) => {
-                            let inputs = form.getElementsByTagName('input');
-                            for(let i = 0; i < inputs.length; i++){
-                                let input = inputs[i];
-
-                                //input.disabled = true;
-                            }
-                        });
-
-                    </script>
-                    <iframe scrolling="no" class="w-full mt-8" id="response" name="response"></iframe>
                 </div>
             </div>
+        </nav>
+    </div>
+</header>
+        <main>
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-20 pb-16 text-center lg:pt-32">
+    <h1 class="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
+        Lets talk about <span class="relative whitespace-nowrap text-rose-600">Sitecore</span>.
+    </h1>
+    <div class="mx-auto md:w-[45rem]">
+        <form
+            id="contact-form"
+            action="https://docs.google.com/forms/d/e/1FAIpQLSdHL26MueX-ar5NSwmIgV7i5W03BYNntAlxzewR28bxAlv8uA/formResponse?embedded=true"
+            target="response"
+            method="POST"
+            class="text-left">
+            <label class="mt-8 block text-sm font-medium text-gray-700">Name<input class="block w-full appearance-none rounded-md border border-gray-200 bg-gray-50 px-3 py-2 text-gray-900 placeholder-gray-400 focus:border-blue-500 focus:bg-white focus:outline-none focus:ring-blue-500 sm:text-sm" type="text" name="entry.1888164337" value="" /></label>
+            <label class="mt-4 block text-sm font-medium text-gray-700">Phone Number<input class="block w-full appearance-none rounded-md border border-gray-200 bg-gray-50 px-3 py-2 text-gray-900 placeholder-gray-400 focus:border-blue-500 focus:bg-white focus:outline-none focus:ring-blue-500 sm:text-sm" type="text" name="entry.2133990514" value="" /></label>
+            <label class="mt-4 block text-sm font-medium text-gray-700">Email Address<input class="block w-full appearance-none rounded-md border border-gray-200 bg-gray-50 px-3 py-2 text-gray-900 placeholder-gray-400 focus:border-blue-500 focus:bg-white focus:outline-none focus:ring-blue-500 sm:text-sm" type="text" name="entry.1310679699" value="" /></label>
+            <label class="mt-4 block text-sm font-medium text-gray-700">Message<textarea class="block w-full appearance-none rounded-md border border-gray-200 bg-gray-50 px-3 py-2 text-gray-900 placeholder-gray-400 focus:border-blue-500 focus:bg-white focus:outline-none focus:ring-blue-500 sm:text-sm" type="text" name="entry.1696175730" value="" ></textarea></label>
+            <input class="mt-8 group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-blue-600 text-white hover:text-slate-100 hover:bg-blue-500 active:bg-blue-800 active:text-blue-100 focus-visible:outline-blue-600 w-full" type="submit" value="Submit" />
+        </form>
+        <script>
+            let form = document.getElementById('contact-form');
+
+            addEventListener('submit', (event) => {
+                let inputs = form.getElementsByTagName('input');
+                for(let i = 0; i < inputs.length; i++){
+                    let input = inputs[i];
+
+                    //input.disabled = true;
+                }
+            });
+
+        </script>
+        <iframe scrolling="no" class="w-full mt-8" id="response" name="response"></iframe>
+    </div>
+</div>
         </main>
         <footer>
 
+        <noscript>Your browser does not support JavaScript</noscript>
         </footer>
     </body>
-    <script>
-        if(window.location.protocol == 'file:') {
-            let baseLocation = window.location.href.substring(0, window.location.href.lastIndexOf('sc-basics/'))
-            let links = window.document.getElementsByTagName('link');
-            for(let i = 0; i < links.length; i++) {
-                let link = links[i];
-                let linkHref = link.getAttribute('href');
-                
-                if(linkHref.startsWith('/sc-basics')) {
-                    let fileHref = baseLocation + linkHref;
-
-                    link.setAttribute('href', fileHref);
-                }
-            }
-
-            let anchors = window.document.getElementsByTagName('a');
-            for(let i = 0; i < anchors.length; i++) {
-                let anchor = anchors[i];
-                let anchorHref = anchor.getAttribute('href');
-
-                if(!anchorHref) {
-                    continue
-                }
-                
-                if(anchorHref.startsWith('/sc-basics')) {
-                    let fileHref = baseLocation + anchorHref;
-
-                    anchor.setAttribute('href', fileHref);
-                }
-            }
-
-            let images = window.document.getElementsByTagName('img');
-            for(let i = 0; i < images.length; i++) {
-                let image = images[i];
-                let imageSrc = image.getAttribute('src');
-
-                if(imageSrc.startsWith('/sc-basics')) {
-                    let fileSrc = baseLocation + imageSrc;
-
-                    image.setAttribute('src', fileSrc);
-                }
-            }
-        }
-    </script>
 </html>
